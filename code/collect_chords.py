@@ -1,3 +1,25 @@
+""" Purpose:
+    Chord aggregator collects chord annotation from the MIREX ACE (Automated Chord Estimation) output archives.
+    It selects the relevant files, standardizes the formatting of the contents, and displays the estimations
+    in regular intervals, allowing side by side comparison of the results.
+
+    Output:
+    a) Multiple outputs for chord estimations of a given recording are written to a csv file in time-aligned columns.
+    b) An index file containing details of the chord annotation source file for each column included in a).
+
+    Usage:
+    To run the script:
+    1) Install the files and the included empty directory structure into an empty directory,
+    which can have any name.
+    2) At a terminal, set your working directory to the ./code directory of the installation.
+    3) Type "python collect_files.py <your filename search text>"
+
+    Current limitations:
+    Currently, only a single recording can be harvested at a time, based on file title.
+    Future improvements will include the ability to harvest and aggregate chord labels from multiple recordings.
+"""
+
+
 import os
 import scelab_format as slf
 import time_framer as tf
