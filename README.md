@@ -29,5 +29,6 @@ which can have any name.
 3) Type "python collect_files.py YOURSEARCHTEXT" (note: replace YOURSEARCHTEXT with the filename text you are searching for.
 
 Current limitations:
-Currently, only a single recording can be harvested at a time, based on file title.
+1) Currently, only a single recording can be harvested at a time, based on file title.
 Future improvements will include the ability to harvest and aggregate chord labels from multiple recordings.
+2) If no instances of the filename search text are found, the program crashes. This will be corrected shortly.

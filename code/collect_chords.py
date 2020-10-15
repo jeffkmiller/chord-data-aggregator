@@ -12,11 +12,12 @@
     1) Install the files and the included empty directory structure into an empty directory,
     which can have any name.
     2) At a terminal, set your working directory to the ./code directory of the installation.
-    3) Type "python collect_files.py <your filename search text>"
+    3) Type "python collect_files.py <your case-sensitive filename search text>"
 
     Current limitations:
-    Currently, only a single recording can be harvested at a time, based on file title.
+    1) Currently, only a single recording can be harvested at a time, based on file title.
     Future improvements will include the ability to harvest and aggregate chord labels from multiple recordings.
+    2) If no instances of the filename search text are found, the program crashes. This will be corrected shortly.
 """
 
 
