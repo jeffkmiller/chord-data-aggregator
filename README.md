@@ -14,7 +14,7 @@ IMPORTANT: This repository does not include the MIREX ACE (Automation Chord Esti
 
 Purpose:
 Chord aggregator collects chord annotation from the MIREX ACE (Automated Chord Estimation) output archives.
-It selects the relevant files, standardizes the formatting of the contents, and displays the estimations
+It selects the relevant files, removes duplicates, standardizes the musical representation of the contents, and displays the estimations
 in regular intervals, allowing side by side comparison of the results.
 
 Output:
@@ -26,7 +26,7 @@ To run the script:
 1) Install the files and the included empty directory structure into an empty directory,
 which can have any name.
 2) At a terminal, set your working directory to the ./code directory of the installation.
-3) Type "python collect_files.py <your filename search text>"
+3) Type "python collect_files.py YOURSEARCHTEXT" (note: replace YOURSEARCHTEXT with the filename text you are searching for.
 
 Current limitations:
 Currently, only a single recording can be harvested at a time, based on file title.
